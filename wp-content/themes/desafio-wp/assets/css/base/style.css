@@ -1,0 +1,273 @@
+/*FONTES*/
+@font-face{
+    font-family: 'Circular Spotify TxT';
+    src: url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Med.eot');
+    src: local('Circular Spotify TxT - Medium'), local('CircularSpotifyTxT-Med'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Med.eot?#iefix') format('embedded-opentype'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Med.woff2') format('woff2'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Med.woff') format('woff'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Med.ttf') format('truetype'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Med.svg#CircularSpotifyTxT-Med') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Circular Spotify Text';
+    src: url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Black.eot');
+    src: local('Circular Spotify TxT - Black'), local('CircularSpotifyTxT-Black'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Black.eot?#iefix') format('embedded-opentype'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Black.woff2') format('woff2'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Black.woff') format('woff'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Black.ttf') format('truetype'),
+    url('../../fontes/circular-spotify-txt/CircularSpotifyTxT-Black.svg#CircularSpotifyTxT-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ROOT VARS */
+:root{
+    font-size: 16px;
+    --font-weight-medium: 500;
+    --font-weight-black: 900;
+    --paddingDefault: 15px;
+    --transition: all .3s ease-in-out;
+    --borderRadius: 3px;
+
+    --accent: #FF0000; /*Vermelho*/
+    --primary: #000000; /*Preto*/
+    --secundary: #FFFFFF; /*Branco*/
+    --tertiary: #121212; /*Cinza esscuro*/
+
+    --font-size--text-x-small: 0.563rem; /*9px*/
+    --font-size--text-small: 0.75rem; /*12px*/
+    --font-size--text: 1.125rem; /*18px - padrão*/
+    --font-size--text-Med: 1.188rem; /*19px*/
+
+    --font-size--title-xx-small: 1.25rem; /*20px*/
+    --font-size--title-x-small: 1.438rem; /*23px*/
+    --font-size--title-small: 1.75rem; /*28px*/
+    --font-size--title: 1.875rem; /*30px - padrão*/
+    --font-size--title-Med: 2.5rem; /*40px*/
+    --font-size--title-large: 4.375rem; /*70px*/
+    --font-size--title-x-large: 6.25rem; /*100px*/
+}
+
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    box-sizing: border-box;outline: 0!important;
+    font-family: 'Circular Spotify TxT';
+    font-weight: 500;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: var(--transition);
+}
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, img, small, strong,
+b, u, i, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, 
+menu, nav, section, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Circular Spotify TxT';
+    line-height: 1;
+}
+
+ul{
+    margin-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    max-width: 100%;
+    display: block;height: auto
+}
+li{
+    list-style: inherit;
+}
+footer li,header li{
+    list-style: none;
+}
+button{
+    background-color: transparent; border:none; outline: none
+}
+button,input[type=submit]{
+    cursor: pointer;
+    -webkit-transition: .4s;transition: .4s;
+}
+body{
+    width: 100%;
+    background-color: var(--primary);
+}
+
+footer,header,section{
+    display: block;
+    width: 100%;
+}
+.hide-h1{
+    color: transparent;
+    margin-bottom: 0;
+    font-size: 0!important;
+    line-height: 0;
+}
+.line-height{
+    line-height: var(--line-height);
+}
+
+/*gutenberg reset*/
+.wp-block-cover, .wp-block-cover-image{
+    padding: 0
+}
+.wp-block-image, .wp-block-embed, .wp-block-columns{
+    margin: 0
+}
+.container,.wp-block-group, section{
+    font-size: var(--font-size--text);
+}
+
+
+
+/* Classes de fonts-sizes */
+h1,h2,h3,h4,h5,h6{
+    font-weight: var(--font-weight-black);
+}
+p{
+    font-weight: var(--font-weight-medium);
+}
+
+/*Títulos*/
+
+.has-title-font-size{
+    font-size: var(--font-size--title);
+}
+.has-title-Med-font-size{
+    font-size: var(--font-size--title-Med);
+}
+.has-title-large-font-size{
+    font-size: var(--font-size--title-large);
+}
+.has-title-x-large-font-size{
+    font-size: var(--font-size--title-x-large);
+}
+
+
+/*Textos*/
+.has-text-font-size{
+    font-size: var(--font-size--text);
+}
+.has-text-Med-font-size{
+    font-size: var(--font-size--text-Med);
+}
+
+
+/*Configuração padrão dos botões*/
+.btn{
+    border-radius: var(--borderRadius);
+    font-size: var(--font-size--text);
+    font-weight: var(--font-weight-Med);
+}
+.btn-white a{
+    background-color: var(--secundary);
+    border: 1px solid var(--secundary);
+    color: #5A5A5A;
+    padding: 5px 40px 3px;
+    transition: var(--transition);
+    border-radius: var(--borderRadius);
+    font-size: var(--font-size--text);
+    font-weight: var(--font-weight-Med);
+}
+.btn-outline{
+    background-color: transparent;
+    border: 1px solid var(--secundary);
+    color: var(--secundary);
+    padding: 5px 40px 3px;
+    transition: var(--transition);
+    width: fit-content;
+}
+.btn-red{
+    padding: 19px 78px;
+    background-color: var(--accent);
+    margin-top: 45px;
+}
+
+.title-video{
+    color: var(--accent);
+    margin-bottom: 34px;
+    line-height: 56px;
+}
+
+.details{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+/*Mudando largura padrão do container bootstrap*/
+@media (min-width: 1920px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1664px;
+    }
+
+}
+
+@media (max-width: 991px){
+    .has-title-x-large-font-size{
+        font-size: var(--font-size--title-large);
+    }
+
+}
+
+@media (max-width: 767px){
+    /*Títulos*/
+
+    .has-title-font-size{
+        font-size: var(--font-size--title-xx-small);
+    }
+    .has-title-Med-font-size{
+        font-size: var(--font-size--title-x-small);
+    }
+    .has-title-large-font-size{
+        font-size: var(--font-size--title-small);
+    }
+    .has-title-x-large-font-size{
+        font-size: var(--font-size--title-Med);
+    }
+
+
+    /*Textos*/
+    .has-text-font-size{
+        font-size: var(--font-size--text-small);
+    }
+    .has-text-Med-font-size{
+        font-size: var(--font-size--text-x-small);
+    }
+
+    .btn, .btn-white a{
+        font-size: var(--font-size--text-small);
+    }
+
+    .btn-red {
+        padding: 11px 70px 10px;
+        margin-top: 25px;
+    }
+
+    .btn-outline, .btn-white a{
+        padding: 6px 36px 5px;
+    }
+}

@@ -1,0 +1,45 @@
+.single main{
+	padding-top: 230px;
+	padding-bottom: 122px;
+}
+
+.single .data{
+	padding-bottom: 74px;
+	margin: auto;
+}
+
+.single .content{
+	padding-top: 93px;
+	margin: auto;
+}
+
+.single .content p{
+	line-height: 35px;
+}
+
+.play-video{
+	position: relative;
+}
+
+.play-video::before{
+	content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4OS41NjMiIGhlaWdodD0iODkuNTYzIiB2aWV3Qm94PSIwIDAgODkuNTYzIDg5LjU2MyI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2ZmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik00NS43ODEsMUE0NC43ODEsNDQuNzgxLDAsMSwwLDkwLjU2Myw0NS43ODEsNDQuODM0LDQ0LjgzNCwwLDAsMCw0NS43ODEsMVpNNjQuMzI1LDQ5LjE2OCwzOS45LDY1LjQ1MmE0LjA3LDQuMDcsMCwwLDEtNi4zMy0zLjM4N1YyOS41YTQuMDY4LDQuMDY4LDAsMCwxLDYuMzI2LTMuMzg3TDY0LjMyMSw0Mi4zOTRhNC4wNyw0LjA3LDAsMCwxLDAsNi43NzRaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz48L3N2Zz4=);
+	position: absolute;
+    top: calc(50% - 45px);
+    right: calc(50% - 45px);
+}
+
+@media (max-width: 767px){
+	.single main {
+	    padding-top: 110px;
+	    padding-bottom: 45px;
+	}
+	.single .data {
+	    padding-bottom: 46px;
+	}
+	.single .content p{
+		font-size: var(--font-size--text-small);
+	}
+	.single .container{
+		padding: 0;
+	}
+}

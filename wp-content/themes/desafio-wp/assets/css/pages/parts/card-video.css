@@ -1,0 +1,10 @@
+/*POST - Card video*/
+.card-videos{
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+}
+
+.thumbnail{
+	margin-bottom: 14px;
+}

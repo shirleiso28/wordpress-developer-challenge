@@ -1,0 +1,27 @@
+.archive main{
+	padding-top: 235px;
+	padding-bottom: 86px;
+}
+
+.archive .description{
+	position: sticky;
+	bottom: 100px;
+	margin-bottom: 38px;
+}
+.archive .description p{
+	line-height: 35px;
+}
+.archive .card-videos{
+	margin-bottom: 46px;
+}
+
+@media (max-width: 767px){
+	.archive main {
+	    padding-top: 95px;
+	}
+
+	.archive .description{
+		position: initial;
+	}
+
+}

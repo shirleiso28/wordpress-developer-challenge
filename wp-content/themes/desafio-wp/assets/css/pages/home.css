@@ -1,0 +1,41 @@
+/* BANNER */
+
+.banner{
+	height: 100%;
+	background-size: cover!important;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: overlay;
+}
+.banner .content-banner{
+	padding-top: 335px;
+    padding-bottom: 212px;
+}
+
+
+
+.main-home{
+	padding-top: 101px;
+	padding-bottom: 62px;
+}
+
+
+
+.list-videos{
+	margin-bottom: 48px;
+}
+
+
+@media (max-width: 767px){
+
+	.banner .content-banner {
+	    padding-top: 238px;
+	    padding-bottom: 155px;
+	}
+
+	.banner .content-banner .details{
+		margin-bottom: 20px;
+	}
+
+}
